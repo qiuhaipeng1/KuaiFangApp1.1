@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/welcome_vp_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:id="@+id/welcome_btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/wel7" />
+
+    <ImageView
+        android:id="@+id/welcome_iv_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:src="@mipmap/wel5" />
+
+    <ImageView
+        android:id="@+id/welcome_iv_dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcome_iv_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/welcome_iv_bar"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/wel6" />
+
+    <ImageView
+        android:id="@+id/welcome_iv_dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="125dp"
+        android:src="@mipmap/wel6"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/welcome_iv_dot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="210dp"
+        android:src="@mipmap/wel6"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/welcome_iv_goto"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/wel8"/>
+
+
+</RelativeLayout>
