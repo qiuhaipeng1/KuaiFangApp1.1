@@ -21,6 +21,7 @@ public class MyFragment extends Fragment {
     private ImageView view;
 
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         // 从宿主中获得传过来的值（图片的资源的id）
