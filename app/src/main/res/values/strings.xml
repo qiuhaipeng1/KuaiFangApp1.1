@@ -6,4 +6,6 @@
         <item>wel3_1</item>
         <item>wel4_1</item>
     </string-array>
+    <string name="home_title_positioning">正在获取位置信息..</string>
+    <string name="search_input_hint">请输入药名、品牌或症状</string>
 </resources>
