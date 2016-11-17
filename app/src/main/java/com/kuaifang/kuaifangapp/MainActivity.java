@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.kuaifang.fragment.FirstPageTopFragment;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -28,13 +30,19 @@ public class MainActivity extends AppCompatActivity {
      */
     public void initFragment() {
         //先给一个默认的首页Fragment
+        FragmentTransaction transaction=fragmentManager.beginTransaction();
+        transaction.replace(R.id.main_fragment,new FirstPageTopFragment()).commit();
+
         rgMain.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rb_home://首页
                         //使用上面的fragmentManager替换占位控件main_fragment
-                        Toast.makeText(MainActivity.this, "首页", Toast.LENGTH_SHORT).show();
+                        FragmentTransaction transaction1=fragmentManager.beginTransaction();
+                        transaction1.replace(R.id.main_fragment,new FirstPageTopFragment()).commit();
+
+                        //Toast.makeText(MainActivity.this, "首页", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.rb_active://活动
                         //使用上面的fragmentManager替换占位控件main_fragment

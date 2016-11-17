@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorFirstPageBackground">#C80A0F</color>
+    <color name="colorFirstPageText">#FFFFFF</color>
+    <color name="colorFirstSearchText">#CBCBCB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="view">#F5F5F5</color>
 </resources>
