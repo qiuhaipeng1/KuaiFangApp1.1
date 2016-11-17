@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">快方送药.</string>
+    <string name="app_name">快方送药</string>
     <string-array name="picNames">
         <item>wel1_1</item>
         <item>wel2_1</item>
