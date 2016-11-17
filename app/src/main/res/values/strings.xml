@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">快方送药.</string>
+    <string name="app_name">快方送药</string>
     <string-array name="picNames">
         <item>wel1_1</item>
         <item>wel2_1</item>
         <item>wel3_1</item>
         <item>wel4_1</item>
     </string-array>
+    <string name="home_title_positioning">正在获取位置信息..</string>
+    <string name="search_input_hint">请输入药名、品牌或症状</string>
 </resources>
