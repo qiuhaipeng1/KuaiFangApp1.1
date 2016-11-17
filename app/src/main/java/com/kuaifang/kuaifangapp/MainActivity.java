@@ -8,6 +8,7 @@ import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import com.kuaifang.fragment.FirstPageTopFragment;
 import com.kuaifang.fragment.ShoppingFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 switch (checkedId) {
                     case R.id.rb_home://首页
                         //使用上面的fragmentManager替换占位控件main_fragment
-                        Toast.makeText(MainActivity.this, "首页", Toast.LENGTH_SHORT).show();
+                        FragmentTransaction transaction1=fragmentManager.beginTransaction();
+                        transaction1.replace(R.id.main_fragment,new FirstPageTopFragment()).commit();
                         break;
                     case R.id.rb_active://活动
                         //使用上面的fragmentManager替换占位控件main_fragment
@@ -43,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.rb_buycar://购物车
                         //使用上面的fragmentManager替换占位控件main_fragment
-                        FragmentTransaction transaction=fragmentManager.beginTransaction();
-                        transaction.replace(R.id.main_fragment,new ShoppingFragment()).commit();
+                        FragmentTransaction transaction3=fragmentManager.beginTransaction();
+                        transaction3.replace(R.id.main_fragment,new ShoppingFragment()).commit();
                         break;
                     case R.id.rb_me://我
                         //使用上面的fragmentManager替换占位控件main_fragment
