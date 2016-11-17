@@ -8,6 +8,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class AddressActivity extends AppCompatActivity {
 
     private EditText mEtAddress;
     private TextView mTvDingWei;
+    private ListView mLv;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,7 +28,8 @@ public class AddressActivity extends AppCompatActivity {
         setContentView(R.layout.activity_address);
         mEtAddress = (EditText) findViewById(R.id.et_address);
         mTvDingWei = (TextView) findViewById(R.id.tv_dingwei);
-
+        mLv = (ListView) findViewById(R.id.lv_address);
+        
         TextWatcher watcher = new MyTextWatcher();
         mEtAddress.addTextChangedListener(watcher);
     }
