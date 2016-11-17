@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CA1419"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="click"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="click"
+            android:paddingRight="16dp"
+            android:src="@mipmap/ico44" />
+
+        <CheckBox
+            android:id="@+id/cb_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iv_share"
+            android:button="@drawable/collect_select"
+            android:onClick="click" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_sdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:src="@mipmap/ceshi" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#99AAAAAA"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="点击查看商品图片"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_sdetails_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[感康]感康"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_sdetails_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="12片"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_sdetails_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="适用于缓解普通感冒及流行性感冒引起的发热、头痛、四肢酸痛、打喷嚏、流鼻涕、鼻塞、咽痛等症状。"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#F4F4F4"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_sdetails_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送至：天安门广场" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/address_fragment_right_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sdetails_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_company_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ceshi1" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_company_logo"
+                    android:text="快方北河沿大药房"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_sdetails_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="¥12.80"
+                    android:textColor="#ff0000" />
+
+                <TextView
+                    android:id="@+id/tv_sdetails_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_company_logo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_company_logo"
+                    android:text="离您 2.12公里，在1小时内送达"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F4F4F4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:contextClickable="true"
+                    android:padding="8dp"
+                    app:cardBackgroundColor="#FFA21E"
+                    app:cardCornerRadius="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_buy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="立即购买"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="40dp"
+                    android:contextClickable="true"
+                    android:padding="8dp"
+                    app:cardBackgroundColor="#ff0000"
+                    app:cardCornerRadius="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_add_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:drawableLeft="@mipmap/ico53"
+                        android:gravity="center"
+                        android:text="加购物车"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F4F4F4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/detail_phone"
+                android:padding="10dp"
+                android:text="药师咨询专线"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#F4F4F4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="说明书"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F4F4F4" />
+
+            <RelativeLayout
+                android:id="@+id/rl_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_name_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【药品名称】" />
+
+                <TextView
+                    android:id="@+id/tv_namespe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_name_id"
+                    android:text="商品名称：感康\n通用名称：复方氨酚烷胺片\n英文名称：COMPOUND PARACETAMOL AND AMANTADINE HYDROCHLORIDE TABLETS" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_element_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_element_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【成　　分】" />
+
+                <TextView
+                    android:id="@+id/tv_elementspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_element_id"
+                    android:text="本品为复方制剂，每片含对乙酰氨基酚250毫克，盐酸金刚烷胺100毫克，人工牛黄10毫克，咖啡因15毫克，马来酸氯苯那敏2毫克。辅料为：淀粉、糖粉、硬脂酸镁。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_character_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_character_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【性　　状】" />
+
+                <TextView
+                    android:id="@+id/tv_characterspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_character_id"
+                    android:text="本品为淡黄色圆形片，味苦。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_function_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_function_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【功能主治】" />
+
+                <TextView
+                    android:id="@+id/tv_functionspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_function_id"
+                    android:text="适用于缓解普通感冒及流行性感冒引起的发热、头痛、四肢酸痛、打喷嚏、流鼻涕、鼻塞、咽痛等症状。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_standard_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_standard_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【规　　格】" />
+
+                <TextView
+                    android:id="@+id/tv_standardspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_standard_id"
+                    android:text="12片" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_usage_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_usage_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【用法用量】" />
+
+                <TextView
+                    android:id="@+id/tv_usagespe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_usage_id"
+                    android:text="口服。成人，一次1片，一日2次。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ueffect_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ueffect_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【不良反应】" />
+
+                <TextView
+                    android:id="@+id/tv_ueffectspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_ueffect_id"
+                    android:text="有时有轻度头晕、乏力、恶心、上腹不适、口干、食欲缺乏和皮疹等，可自行恢复。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_taboo_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_taboo_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【禁　　忌】" />
+
+                <TextView
+                    android:id="@+id/tv_taboospe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_taboo_id"
+                    android:text="严重肝肾功能不全者禁用。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_notice_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_notice_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【注意事项】" />
+
+                <TextView
+                    android:id="@+id/tv_noticespe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_notice_id"
+                    android:text="1.用药3-7天，病症未缓解，请咨询医师或药师。\n2.服用本品期间不得饮酒或含酒精的饮料。\n3.不得同时服用与本品成份相似的其他抗感冒药。\n4.肝功能不全、肾功能不全、脑血管病史、精神病史或癫痫病史患者慎用。\n5.前列腺肥大、青光眼等患者以及老年人应在医师指导下使用。\n6.孕妇及哺乳期妇女慎用。\n7.服药期间不得驾驶机、车、船、从事高空作业、机械作业及操作机密仪器。\n8.如服用过量或出现严重不良反应，应立即就医。\n9.对本品过敏者禁用，过敏体质者慎用。\n10.本品性状发生改变时禁止使用。\n11.请将本品放在儿童不能接触的地方。\n12.如正在使用其他药品，使用本品前请咨询医师或药师。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_influence_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_influence_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【药物相互作用】" />
+
+                <TextView
+                    android:id="@+id/tv_influencespe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_influence_id"
+                    android:text="1、与其他解热镇痛药同用，可增加肾毒性的危险。\n2、本品不宜与氯霉素、巴比妥类(如苯巴比妥)等并用。\n3、如与其他药物同时使用可能会发生药物相互作用，详情请咨询医师或药师。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_depot_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_depot_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【贮　　藏】" />
+
+                <TextView
+                    android:id="@+id/tv_depotspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_depot_id"
+                    android:text="密封，在阴凉干燥处保存。" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_pack_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【包　　装】" />
+
+                <TextView
+                    android:id="@+id/tv_packspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_pack_id"
+                    android:text="双铝箔包装，12片/板/盒" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_validity_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_validity_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【有 效　期】" />
+
+                <TextView
+                    android:id="@+id/tv_validityspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_validity_id"
+                    android:text="36个月" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_appnum_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_appnum_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【批准文号】" />
+
+                <TextView
+                    android:id="@+id/tv_appnumspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_appnum_id"
+                    android:text="国药准字H22026193" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_procom_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_procom_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【生产企业】" />
+
+                <TextView
+                    android:id="@+id/tv_procomspe_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_procom_id"
+                    android:text="吉林省吴太感康药业有限公司" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_promeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#F4F4F4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="商品详情"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:id="@+id/ll_promeg_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_togbuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#F4F4F4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="经常一起购买的商品"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#F4F4F4" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_togbuy_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

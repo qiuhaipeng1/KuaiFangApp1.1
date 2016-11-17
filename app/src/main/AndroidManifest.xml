@@ -16,8 +16,7 @@
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|navigation|orientation"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
+            android:screenOrientation="portrait" />
 
         <!--!!!!!!注意，新建Activity必加android:configChanges="keyboardHidden|navigation|orientation"-->
         <activity
@@ -36,6 +35,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SDetailsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation" />
     </application>
 
 </manifest>

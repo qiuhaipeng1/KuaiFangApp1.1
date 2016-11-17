@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:button="@drawable/checkbox_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/indent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[白云山]板蓝根颗粒"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_standard"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:paddingBottom="8dp"
+                android:paddingTop="6dp"
+                android:text="10gx20袋 含蔗糖"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/btn_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_standard"
+                android:background="@drawable/cut_select" />
+            <TextView
+                android:text="1"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/btn_cut"
+                android:background="@mipmap/order_button"
+                android:layout_width="60dp"
+                android:layout_alignBottom="@+id/btn_cut"
+                android:layout_height="25dp" />
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_standard"
+                android:layout_alignRight="@+id/tv_name"
+                android:background="@drawable/add_select" />
+            <TextView
+                android:id="@+id/tv_price"
+                android:text="9.60"
+                android:textSize="16sp"
+                android:textColor="#ff0000"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/btn_cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

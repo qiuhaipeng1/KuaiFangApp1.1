@@ -1,13 +1,14 @@
 package com.kuaifang.kuaifangapp;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.kuaifang.fragment.ShoppingFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.rb_buycar://购物车
                         //使用上面的fragmentManager替换占位控件main_fragment
-                        Toast.makeText(MainActivity.this, "购物车", Toast.LENGTH_SHORT).show();
+                        FragmentTransaction transaction=fragmentManager.beginTransaction();
+                        transaction.replace(R.id.main_fragment,new ShoppingFragment()).commit();
                         break;
                     case R.id.rb_me://我
                         //使用上面的fragmentManager替换占位控件main_fragment

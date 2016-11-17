@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CA1419">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/ico58" />
+
+            <TextView
+                android:id="@+id/iv_empty_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="您的购物车为空" />
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:contextClickable="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#CA1419"
+                >
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_start_browse"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="开始浏览"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/shopping_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
