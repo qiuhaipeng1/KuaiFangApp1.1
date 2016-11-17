@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp">
+<TextView
+    android:id="@+id/tv_title"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:text="竹林广场"
+    android:layout_height="0dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_weight="1"/>
+<TextView
+    android:id="@+id/tv_address"
+    android:textSize="15sp"
+    android:layout_width="match_parent"
+    android:text="滨湖南路中段"
+    android:paddingBottom="10dp"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+</LinearLayout>
