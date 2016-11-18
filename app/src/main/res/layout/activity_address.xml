@@ -6,7 +6,6 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#ca1419"
@@ -83,18 +82,17 @@
                 android:paddingLeft="3dp"
                 android:src="@mipmap/home_title_searbar" />
 
-            <EditText android:id="@+id/et_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/view"
-            android:background="@null"
-            android:hint="请输入你的送货地址"
-            android:paddingBottom="7dp"
-            android:paddingLeft="24dp"
-            android:paddingTop="11dp"
-            android:textSize="13sp" >
-                <requestFocus />
-            </EditText>
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view"
+                android:background="@null"
+                android:hint="请输入你的送货地址"
+                android:paddingBottom="7dp"
+                android:paddingLeft="24dp"
+                android:paddingTop="11dp"
+                android:textSize="13sp" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -130,10 +128,10 @@
                 android:id="@+id/tv_dingwei"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_toLeftOf="@+id/iv_ref"
                 android:paddingBottom="10dp"
                 android:paddingTop="7dp"
+                android:layout_toLeftOf="@+id/iv_ref"
+                android:layout_marginLeft="10dp"
                 android:text="正在获取位置信息..."
                 android:textColor="#220000"
                 android:textSize="15sp" />
@@ -173,8 +171,8 @@
     <ListView
         android:id="@+id/lv_address"
         android:layout_width="match_parent"
+        android:background="#ffffff"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#ffffff" />
+        android:layout_weight="1" />
 
 </LinearLayout>
